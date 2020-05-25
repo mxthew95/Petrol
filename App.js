@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View,  } from 'react-native';
-import Petrols from './Petrols.js';
-import Header from './Header.js';
+import Petrols from './components/Petrols.js';
+import Header from './components/Header.js';
 
 export default function App() {
   return (
-    <View>
-      <Header/>
+    <View style={styles.container}>
+        <Header/>
       <View style={styles.content}>
         <Petrols/>
       </View>
@@ -17,13 +17,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
+    flex: 1
   },
   content: {
-    marginLeft: 20,
-    marginRight: 20
+    flex: 1
   }
 });
